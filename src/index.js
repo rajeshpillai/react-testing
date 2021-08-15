@@ -4,9 +4,27 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import {
+  BrowserRouter as Router, 
+  Switch,
+  Route,
+  useParams
+} from 'react-router-dom';
+
+import NavBar from './components/navbar';
+import UseState from './features/use-state';
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <h4>useSWR Demo</h4>
+      <NavBar />
+      <Switch>
+        <Route path="/usestate" exact>
+          <UseState><h2>Hello useState!</h2></UseState>
+        </Route>
+      </Switch>
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );
