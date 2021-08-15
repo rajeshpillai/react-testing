@@ -13,15 +13,19 @@ import {
 
 import NavBar from './components/navbar';
 import UseState from './features/use-state';
+import List from './features/list';
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-      <h4>useSWR Demo</h4>
+      <h4>React Testing Recipes </h4>
       <NavBar />
       <Switch>
         <Route path="/usestate" exact>
           <UseState><h2>Hello useState!</h2></UseState>
+        </Route>
+        <Route path="/list" exact>
+          <List />
         </Route>
       </Switch>
     </Router>
