@@ -14,6 +14,7 @@ import {
 import NavBar from './components/navbar';
 import UseState from './features/use-state';
 import List from './features/list';
+import ButtonEvent from './features/button-event';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -26,6 +27,9 @@ ReactDOM.render(
         </Route>
         <Route path="/list" exact>
           <List />
+        </Route>
+        <Route path="/button-event" exact>
+          <ButtonEvent onClick={() => {}} text = "Submit"/>
         </Route>
       </Switch>
     </Router>
