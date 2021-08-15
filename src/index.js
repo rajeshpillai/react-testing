@@ -11,7 +11,7 @@ import {
   useParams
 } from 'react-router-dom';
 
-import NavBar from './components/navbar';
+import NavBar from './components/navbar/index';
 import UseState from './features/use-state';
 import List from './features/list';
 import ButtonEvent from './features/button-event';

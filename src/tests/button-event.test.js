@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../../features/button-event";
+import Button from "../features/button-event";
 import {render, fireEvent, cleanup} from "@testing-library/react"
 
 afterEach(cleanup);

@@ -1,6 +1,6 @@
 import * as React from 'react'
 import {render, fireEvent, screen} from '@testing-library/react'
-import UseState from '../../features/use-state';
+import UseState from '../features/use-state';
 
 test('shows the children when the checkbox is checked', () => {
   render(<UseState><h2>Hello useState!</h2></UseState>)

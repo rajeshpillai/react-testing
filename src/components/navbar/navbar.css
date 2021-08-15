@@ -1,0 +1,11 @@
+.navbar {
+    display:flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    background: purple;
+    color: white;
+}
+
+.navbar a {
+    color: white;
+}
