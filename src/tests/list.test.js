@@ -1,7 +1,7 @@
 import * as React from 'react'
 import {render, cleanup} from '@testing-library/react'
 
-import List from  '../../features/list';
+import List from  '../features/list';
 
 afterEach(cleanup)
 

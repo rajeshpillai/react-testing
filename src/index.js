@@ -15,6 +15,14 @@ import NavBar from './components/navbar/index';
 import UseState from './features/use-state';
 import List from './features/list';
 import ButtonEvent from './features/button-event';
+import AsyncAction from './features/async-action';
+
+const fetchTodos = async () => {
+  const response = await fetch('https://jsonplaceholder.typicode.com/posts')
+  const todos = await response.json();
+
+  return todos;
+};
 
 ReactDOM.render(
   <React.StrictMode>
@@ -30,6 +38,9 @@ ReactDOM.render(
         </Route>
         <Route path="/button-event" exact>
           <ButtonEvent onClick={() => {}} text = "Submit"/>
+        </Route>
+        <Route path="/async-action" exact>
+          <AsyncAction listTodos={fetchTodos}  />
         </Route>
       </Switch>
     </Router>

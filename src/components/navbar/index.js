@@ -11,6 +11,8 @@ export default function NavBar() {
       <li><Link to="/usestate">useState</Link></li>
       <li><Link to="/list">List Items</Link></li>
       <li><Link to="/button-event">Button Event</Link></li>
+      <li><Link to="/async-action">Async Actions</Link></li>
+
     </ul>
   );
 }
