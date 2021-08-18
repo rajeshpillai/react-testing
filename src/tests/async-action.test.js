@@ -45,8 +45,10 @@ describe.only("Display Todos", () => {
       fireEvent.click(getButton);
       // const data = screen.getAllByTestId("todo-item").map(item => item.textContent);
     })
+    
+    await act(() => promise)
+    
     expect(fetchTodos).toHaveBeenCalled();
     expect(fetchTodos.mock.calls.length).toBe(1);
-    await act(() => promise)
   })
 });
